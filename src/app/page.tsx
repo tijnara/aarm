@@ -55,7 +55,7 @@ export default function Home() {
             {/* Main Content */}
             <main className="flex-grow">
                 {/* Hero Section */}
-                <section className="container mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-32">
+                <section id="services" className="container mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-32">
                     <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
                         {/* Hero Text */}
                         <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
@@ -90,7 +90,7 @@ export default function Home() {
                 </section>
 
                 {/* Technologies Section */}
-                <section className="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+                <section id="projects" className="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
                     <h2 className="text-center text-2xl font-semibold leading-8 text-white">
                         Technologies We Master
                     </h2>
@@ -107,7 +107,7 @@ export default function Home() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+                <section id="contact" className="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
                     <div className="relative isolate overflow-hidden rounded-3xl bg-zinc-900 px-6 py-20 shadow-2xl sm:py-24 lg:px-24">
                         {/* Background Gradient */}
                         <div className="absolute inset-0 bg-gradient-to-r from-[var(--gold-dark)]/20 to-black/30 opacity-30"></div>
@@ -133,6 +133,11 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+
+                {/* Team Section Placeholder */}
+                <section id="team" style={{display: 'none'}}></section>
+                {/* Start Project Section Placeholder */}
+                <section id="start" style={{display: 'none'}}></section>
             </main>
 
             {/* Footer (Simple) */}
