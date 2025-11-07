@@ -25,27 +25,29 @@ export default function RootLayout({
     return (
         <html lang="en" className="dark">
         <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased text-[var(--foreground)] bg-[#0a0a0a] relative overflow-hidden`}
+            className={`${geistSans.variable} ${geistMono.variable} antialiased text-[var(--foreground)] bg-[#181207] relative`}
         >
-        {/* Improved gold radial gradient background */}
+        {/* Stronger gold radial gradient background (z-0) */}
         <div
             aria-hidden="true"
             className="pointer-events-none fixed inset-0 z-0"
             style={{
-                background: `radial-gradient(ellipse 80% 60% at 50% 30%, #E6C20033 0%, #0a0a0a 80%)`,
+                background: `radial-gradient(ellipse 90% 70% at 50% 30%, #B8860B88 0%, #181207 80%)`,
                 opacity: 1,
             }}
         />
-        {/* Subtle gold glow at lower right for depth */}
+        {/* Rich gold glow at lower right for depth (z-0) */}
         <div
             aria-hidden="true"
             className="pointer-events-none fixed inset-0 z-0"
             style={{
-                background: `radial-gradient(ellipse 40% 20% at 80% 80%, #B8860B22 0%, #0a0a0a 100%)`,
-                opacity: 0.7,
+                background: `radial-gradient(ellipse 40% 20% at 80% 80%, #E6C20055 0%, #181207 100%)`,
+                opacity: 0.8,
             }}
         />
-        {children}
+        <div className="relative z-10">
+            {children}
+        </div>
         </body>
         </html>
     );
