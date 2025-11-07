@@ -80,14 +80,14 @@ export default function Home() {
 
                         {/* Logo image on the right side, styled to match the reference */}
                         <div className="flex h-64 items-center justify-center lg:h-96">
-                            <div className="relative flex items-center justify-center w-full h-full">
+                            <div className="relative flex items-center justify-center w-full h-full logo-3d-container">
                                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-yellow-900/40 via-[#B89B74]/30 to-black/60 blur-2xl opacity-80"></div>
                                 <Image
                                     src="/aarm-logo-transpa2.png"
                                     alt="A²RM Logo"
                                     width={450}
                                     height={450}
-                                    className="relative z-10 drop-shadow-2xl"
+                                    className="relative z-10 drop-shadow-2xl animate-spin-slow"
                                     priority
                                 />
                             </div>
