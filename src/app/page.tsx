@@ -12,10 +12,10 @@ export default function Home() {
                         <Image
                             src="/aarm-logo.png" // Using the new logo from /public
                             alt="A²RM Logo"
-                            width={120}
-                            height={99}
+                            width={180} // Increased width
+                            height={149} // Increased height, preserves aspect ratio
                             priority
-                            className="h-10 w-auto" // Resize for navbar
+                            className="h-16 w-auto bg-transparent" // Larger height, ensure transparent bg
                         />
                     </Link>
 
@@ -117,7 +117,7 @@ export default function Home() {
                                 Ready to Start Your Project?
                             </h2>
                             <p className="mt-6 text-lg leading-8 text-gray-300">
-                                We turn ideas into fast, reliable, and modern web applications. Let's build something amazing together.
+                                We turn ideas into fast, reliable, and modern web applications. Let&apos;s build something amazing together.
                             </p>
                             <div className="mt-10 flex items-center justify-center gap-x-6">
                                 <Link
