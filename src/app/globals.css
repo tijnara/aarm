@@ -30,16 +30,18 @@ body {
 
 @layer utilities {
   .animate-spin-slow {
-    /* Old animation, replaced by spin3d for 3D effect */
-    animation: spin3d 6s linear infinite;
+    animation: spinY 10s linear infinite;
   }
   .logo-3d-container {
     perspective: 1200px;
     perspective-origin: 50% 50%;
   }
-  @keyframes spin3d {
+  @keyframes spinY {
+    from {
+      transform: rotateY(0deg);
+    }
     to {
-      transform: rotateY(-360deg) rotateX(25deg);
+      transform: rotateY(360deg);
     }
   }
 }
